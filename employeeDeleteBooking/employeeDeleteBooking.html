@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employees | Booking info</title>
+    <link rel="stylesheet" href="../client/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body>
+    <header>
+        <div id="company">YOGA STUDIO</div>
+        <div id="header-underline"></div>
+        <div id="info-line">
+            <div id="comp-phone" class="info">EMPLOYEE PORTAL</div>
+           
+        </div>
+    </header>
+    <nav id="subheader">
+        <div id="links">
+            <a class="nav-link" id="classes-link">BOOKINGS</a>
+            <a class="nav-link" id="bookings-link" href="../employeeClient/employeeCreateEventIndex.html">CLASSES</a>
+            
+        </div>
+    </nav>
+
+    <main id="main">
+        <div id="edit-info-container">
+
+        </div>
+        <div id="table-container">
+            <table id="guest-booking-table">
+                <tr>
+                    <th>Guest Name</th>
+                    <th>Email</th>
+                    <th>Class</th>
+                    <th>Instructor</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Edit Guest</th>
+                    <th>Delete Booking</th>
+                    
+                </tr>
+            </table>
+        </div>
+
+
+        
+    </main>
+    
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./employeeDeleteBooking.js"></script>
+</body>
+</html>

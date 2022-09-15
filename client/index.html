@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body class="bg">
+    <div id="page-contain">
+        <header>
+            <div id="company">YOGA STUDIO</div>
+            <div id="header-underline"></div>
+            <div id="info-line">
+                <div id="comp-phone" class="info">555-555-5555</div>
+                <div id="comp-address-container" class="info"><div>123 W Main St,</div><div> Anytown, ST</div></div>
+                <div id="icon-container" class="info">
+                    <img id="insta-logo" class="logo-pic"src="/instagramLogo.jpg">
+                    <img id="facebook-logo" class="logo-pic" src="/facebookLogo.jpg">
+                    <img id="twitter-logo" class="logo-pic" src="/twitterLogo.jpg">
+                </div>
+            </div>
+        </header>
+        <nav id="subheader">
+            <div id="links">
+                <a class="nav-link" id="home-link">HOME</a>
+                <a class="nav-link" id="schedule-link">SCHEDULE</a>
+                <a class="nav-link" id="instructor-link">INSTRUCTORS</a>
+                <a class="nav-link" id="about-link">ABOUT</a>
+                <a class="nav-link" id="rates-link">RATES</a>
+            </div>
+        </nav>
+
+        <main id="main-back"  class="split-main">
+            <h1 id="sign-up-info-message">Sign up for a class below!</h1>
+            <div id="booking-created-popup" class="pop-ups" style="display:none">
+                <p class="created-info">You reserved a space!</p>
+                <p class="created-info smaller">We'll see you soon!</p>
+                <div id="created-booking-ok-button" class="ok-buttons" onclick="toggle_visibility('booking-created-popup')">DONE</div>
+            </div>
+            <section id="display"></section>
+        </main>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./client.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employees | Class Info</title>
+    <link rel="stylesheet" href="../client/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body>
+    <header>
+        <div id="company">YOGA STUDIO</div>
+        <div id="header-underline"></div>
+        <div id="info-line">
+            <div id="comp-phone" class="info">EMPLOYEE PORTAL</div>
+           
+        </div>
+    </header>
+    <nav id="subheader">
+        <div id="links">
+            <a class="nav-link" id="bookings-link" href="../employeeDeleteBooking/employeeDeleteBooking.html">BOOKINGS</a>
+            <a class="nav-link" id="classes-link" >CLASSES</a>
+            
+        </div>
+    </nav>
+
+    <main id="main">
+
+        <h1 id="create-class-info">Create classes:</h1>
+
+        <div id="class-create-container">
+            <div id="class-title">New Class</div>
+
+            <form id="new-class-form">
+
+                <div id="class-select-container" class="form-section">
+                    <label for="class-select">Class:</label>
+                    <input name="class-select" id="class-select" class="selector">
+                </div>
+
+                <div id="instructor-select-container" class="form-section" >
+                    <label for="instructor-select">Instructor:</label>
+                    <input name="instructor-select" id="instructor-select" class="selector">
+                </div>
+
+                <div id="date-select-container" class="form-section">
+                    <label for="month-select">Date:</label>
+                    <select name="month-select" id="month-select" class="selector">
+                        <option value="January">January</option>
+                        <option value="February">February</option>
+                        <option value="March">March</option>
+                        <option value="April">April</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                        <option value="July">July</option>
+                        <option value="August">August</option>
+                        <option value="September">September</option>
+                        <option value="October">October</option>
+                        <option value="November">November</option>
+                        <option value="December">December</option>
+                    
+                    </select>
+
+                    <label for="day-select"></label>
+                    <select name="day-select" id="day-select" class="selector">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+
+                    </select>
+                </div>
+
+                <div id="time-select-container" class="form-section">
+                    <label for="time-select">Time:</label>
+                    <input name="time-select" id="time-select" class="selector">
+                </div>
+
+                <div id="participant-select-container" class="form-section">
+                    <label for="participant-select" class="selector">Participants</label>
+                    <input name="participant-select" id="participant-select" required>
+                </div>
+
+                <button type="submit" id="create-class-submit-form" class="form-section">Submit</button>
+
+            </form>
+        </div>
+        <div id="class-created-popup" class="pop-ups" style="display:none;">
+            <p class="created-info">Class Created!</p>
+            <p class="created-info smaller">Refresh to view changes.</p>
+            <div id="created-ok-button" class="ok-buttons" onclick="toggle_visibility('class-created-popup')">DONE</div>
+        </div>
+        <h1 id="edit-or-delete-info">Edit or delete existing classes:</h1>
+
+        <div id="card-container"></div>
+
+
+        
+        
+    </main>
+    
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./employeeCreateEventClient.js"></script>
+</body>
+</html>
